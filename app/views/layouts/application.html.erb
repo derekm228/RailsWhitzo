@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Whitzo</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <%= favicon_link_tag 'favicon' %>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-signin-clientid" content="662082830987-gtl9bc3sdtmlfhgif9p07hrjc27kk5t5.apps.googleusercontent.com" />
+  <meta name="google-signin-scope" content="https://www.googleapis.com/auth/plus.login" />
+  <meta name="google-signin-requestvisibleactions" content="http://schema.org/AddAction" />
+  <meta name="google-signin-cookiepolicy" content="single_host_origin" />
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,100italic,700,100' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPrxhHML8CYWNDEjiuP3LabgQGh1zhzM8&libraries=places" type="text/javascript"></script>
+  <script src="https://apis.google.com/js/client:platform.js" async defer></script>
 
 </head>
 <body>
@@ -34,9 +52,10 @@
 </div>
 
 <style>
-   a {
-      color:blue;
-   }
+  #memberText a {
+    color:rgba(0, 180, 255, 0.87);
+  }
+</style>
 
 </body>
 </html>
