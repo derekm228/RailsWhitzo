@@ -1,28 +1,28 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+I've created an app where landlords can upload their apartments to be rented
 
-Things you may want to cover:
+Use Cases:
+   - A homeowner needs to be able to list their rental property for others to view
+   - A homeowner needs to be able to manage their property and edit any details if necessary
+   - Property owners must be able to delete their property if they do not wish for it to be available
+   - A user must be able to search for rental properties based on location and other miscellaneous properties
 
-* Ruby version
+Rental Property
+   - Title
+   - Owner
+   - Location
+   - Move In / Move Out
+   - Amenities
+   - Pictures (wip)
+   - Contract (wip)
 
-* System dependencies
+Pictures
+   - Name
+   - Attachment
+   - Rental (fk)
 
-* Configuration
+Users
+   - Must be registered in order to create a property
+   - You do not need to be registered in order to search for a property (wip)
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
