@@ -1,0 +1,61 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Whitzo</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100italic,700,100' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100italic,700,100' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPrxhHML8CYWNDEjiuP3LabgQGh1zhzM8&libraries=places" type="text/javascript"></script>
+        <script src="https://apis.google.com/js/client:platform.js" async defer></script>
+
+
+    </head>
+    <body>
+        <h1 id="listPageH1">Whitzo -- Find or list your apartments without fees and brokers</h1>
+
+        <div id="listPageContainer">
+            <div class="header">
+                <div id="backButton">
+                  <%= link_to image_tag("back_button", size: "40x40", alt: "Back to Home"), "/rentals" %>
+
+
+                </div>
+                <div id="backText">
+                    <h3>Whitzo</h3>
+                </div>
+                <div id="pageTitle">
+                    <h3>List My Apartment</h3>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="leftSideBar">
+                    <ul>
+                        <li><a href="#name">Title</a></li>
+                        <li><a href="#location">Location</a></li>
+                        <li><a href="#keyInfo">Key Info</a></li>
+                        <li><a href="#availability">Availability</a></li>
+                        <li><a href="#amenities">Amenities</a></li>
+                        <li><a href="#pictures">Pictures</a></li>
+                        <li><a href="#contract">Contract</a></li>
+
+                    </ul>
+                </div>
+
+                <div id="listMyApartmentContent">
+                  <!-- Use a form_for helper to generate a HTML form tag -->
+                  <%= render 'form' %>
+                </div>
+            </div>

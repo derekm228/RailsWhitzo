@@ -1,0 +1,67 @@
+<%= form_for(@rental) do |f| %>
+   <div class="listSection" id="name">
+      <h2><%= f.label :title %></h2>
+      <%= f.text_field :title, class: "apartmentInput", placeholder: "Title" %>
+
+   </div>
+   <div class="listSection" id="location">
+      <h2><%= f.label :address %></h2>
+      <%= f.text_field :address1, class: "apartmentInput", id: "address", placeholder: "Address" %>
+      <div id="map-section"></div>
+   </div>
+
+   <div class="listSection" id="keyInfo">
+      <h2>Key Information</h2>
+      <%= f.number_field :price, class: "apartmentInput", placeholder: "Price per month" %>
+      <%= f.number_field :bedrooms, class: "apartmentInput", placeholder: "Bedrooms" %>
+      <%= f.number_field :bathrooms, class: "apartmentInput", placeholder: "Bathrooms" %>
+   </div>
+
+   <div class="listSection" id="availability">
+      <h2>Availability</h2>
+      <div id="moveIn">
+          <h3>Select the Move-In Date</h3>
+          <%= f.date_field :move_in, style: "background-color:white; color:black" %>
+
+      </div>
+      <div id="moveOut">
+          <h3>Select the Move-Out Date</h3>
+          <%= f.date_field :move_out, style: "background-color:white; color:black" %>
+      </div>
+   </div>
+
+   <div class="listSection" id="amenities">
+      <h2>Amenities</h2>
+      <fieldset class="listInfo">
+         <table>
+            <tr>
+               <td><%= f.check_box :washer_dryer %><label for="washerDryer">Washer / Dryer</label></td>
+               <td><%= f.check_box :dishwasher %><label for="dishwasher">Dishwasher</label></td>
+               <td><%= f.check_box :utilities_included %><label for="utilitiesIncluded">Utilities Included</label></td>
+               <td><%= f.check_box :parking %><label for="parking">Parking</label></td>
+            </tr>
+            <tr>
+               <td><%= f.check_box :outdoor_space %><label for="outdoorSpace">Outdoor Space</label></td>
+               <td><%= f.check_box :pool %><label for="pool">Pool</label></td>
+               <td><%= f.check_box :porch %><label for="porch">Porch</label></td>
+               <td><%= f.check_box :central_air %><label for="centralAir">Central Air</label></td>
+            </tr>
+            <tr>
+               <td><%= f.check_box :fitness_center %><label for="fitnessCenter">Fitness Center</label></td>
+               <td><%= f.check_box :storage_space %><label for="storageSpace">Storage Space</label></td>
+               <td><%= f.check_box :bike_friendly %><label for="bikeFriendly">Bike Friendly</label></td>
+               <td><%= f.check_box :concierge %><label for="concierge">Concierge</label></td>
+            </tr>
+            <tr>
+               <td><%= f.check_box :pet_friendly %><label for="petFriendly">Pet Friendly</label></td>
+               <td><%= f.check_box :wifi %><label for="wifi">Wi-Fi</label></td>
+               <td><%= f.check_box :ceiling_fans %><label for="ceilingFans">Ceiling Fans</label></td>
+               <td><%= f.check_box :fireplace %><label for="fireplace">Fireplace</label></td>
+            </tr>
+         </table>
+      </fieldset>
+   </div>
+
+   <!-- Create a Submit Button -->
+   <%= f.submit style: "background-color:white; color:black; padding:5px"%><br><br><br>
+<% end %>

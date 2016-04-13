@@ -1,0 +1,820 @@
+/*! HTML5 Boilerplate v5.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+
+    background: url(home_background-min.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ========================================================================== */
+/* CSS for all pages                                                          */
+/* ========================================================================== */
+
+html {
+    /* Taken care of up top */
+}
+
+* {
+    padding : 0;
+    margin : 0;
+    border : 0;
+}
+
+body {
+    background-size : auto;
+}
+
+/* ========================================================================== */
+/* CSS for the home page                                                      */
+/* ========================================================================== */
+
+#homePageH1 {
+    display: none;
+}
+
+#homePageContainer {
+    display : block;
+    width : 100%;
+    height: 100%;
+    overflow : hidden;
+}
+
+#homePageContainer img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#homePageLogo {
+    padding-top: 5%;
+    float : left;
+    clear : none;
+    height : 20%;
+    width : 100%;
+    text-align: center;
+}
+
+#homePageTagLine {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    float : left;
+    clear : none;
+    height : 10%;
+    width : 100%;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 24px;
+    color: #F0F0F0;
+}
+
+.homePageSide {
+    padding-top: 7%;
+    padding-bottom: 10%;
+    float : left;
+    clear : none;
+    height : 50%;
+    width : 49.75%;
+    text-align: center;
+    color: #F0F0F0;
+}
+
+#homePageVerticalLine {
+    margin-top: 4%;
+    padding-top: 20%;
+    float : left;
+    clear : none;
+    width : 0.4%;
+    border-right: 1px solid white;
+}
+
+.homePageSide h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #F0F0F0;
+    padding-bottom:1%;
+}
+
+.homePageSide p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    color: #F0F0F0;
+}
+
+.homePageSide input{
+    margin-top:5%;
+    padding:15px 25px 15px 25px;
+
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    background: none;
+    border: solid 1px #2A4E77;
+
+    -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.8), 2px 2px 2px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.8), 2px 2px 2px rgba(0, 0, 0, 0.8);
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.8), 2px 2px 2px rgba(0, 0, 0, 0.8);
+
+    outline:none;
+}
+
+.homePageSide input:hover{
+    background: #356094;
+
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+
+    outline:none;
+}
+
+.homePageSide input:active {
+    background: #2E5481;
+
+    -webkit-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.6);
+
+    -webkit-transition-duration: 0.1s;
+    -moz-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    outline:none;
+}
+
+/* ========================================================================== */
+/* CSS for the footer of all pages                                            */
+/* ========================================================================== */
+
+.footer {
+   position: fixed;
+   float: left;
+   left:0px;
+   bottom:0px;
+   height:5%;
+   width:100%;
+   border-top: 2px solid white;
+   background-color: black;
+}
+
+#login {
+    float: left;
+    clear: none;
+    height: 38px;
+    width: 49%;
+    color: #F0F0F0;
+    text-align:left;
+    padding-top: 6px;
+    padding-left: 6px;
+}
+
+#login h3 {
+    visibility: hidden;
+    padding-top: 0.5%;
+    padding-left: 1%;
+}
+
+#shareImages {
+    float: right;
+    clear: none;
+    height: 40px;
+    width: 50%;
+    color: #F0F0F0;
+    text-align:right;
+}
+
+.footer input[type="button"] {
+    padding: 8px 30px 8px 30px;
+    border: solid 1px #dcdcdc;
+    font-size: 12px;
+    color:black;
+}
+
+.footer input[type="button"]:hover {
+    border: solid 1px #707070;
+    box-shadow: 0 0 5px 1px #F0F0F0;
+    background: #F0F0F0;
+    transition-duration: 2s;
+}
+
+/* ========================================================================== */
+/* CSS specific for the Apartment Listing Page                                */
+/* ========================================================================== */
+
+#listPageH1 {
+    display: none;
+}
+
+#listPageContainer {
+    height: 100%;
+    width: 100%;
+    margin: auto auto 0 auto;
+    position: fixed;
+}
+
+.header {
+    float: left;
+    height: 5%;
+    width: 100%;
+    border-bottom: 2px solid white;
+    background-color: black;
+}
+
+#backHeader {
+    float: left;
+    width: 33%;
+}
+
+#centerHeader {
+    float: left;
+    width: 33%;
+}
+
+#forwardHeader {
+    float: left;
+    width: 33%;
+}
+
+#backButton {
+    float: left;
+    clear: none;
+    text-align:left;
+    padding-left: 5px;
+    padding-top: 2px;
+}
+
+#backText {
+    float: left;
+    clear: none;
+    text-align:left;
+    padding-top: 9px;
+    padding-left: 10px;
+    color: #F0F0F0;
+}
+
+#pageTitle {
+    float: center;
+    clear: none;
+    text-align:center;
+    padding-top: 9px;
+    color: #F0F0F0;
+}
+
+#submitListing {
+    float: right;
+    clear: none;
+    text-align:right;
+    padding-right: 5px;
+    padding-top: 2px;
+}
+
+#submitText {
+    float: right;
+    clear: none;
+    text-align: right;
+    padding-right: 5px;
+    padding-top: 9px;
+    color: #F0F0F0;
+}
+
+.content {
+    float: left;
+    height: 90%;
+    width: 100%;
+}
+
+.leftSideBar {
+    height: 100%;
+    width: 10%;
+    float: left;
+    clear: none;
+    text-align: left;
+    color: #F0F0F0;
+    padding-top: 1%;
+    padding-left: 2%;
+}
+
+.leftSideBar li {
+    list-style-type: none;
+    line-height: 40px;
+    font-size: 22px;
+    font-family: 'Francois One', sans-serif;
+}
+
+.leftSideBar a:link {
+    color: #839CA5;
+    text-decoration: none;
+}
+
+.leftSideBar a:visited {
+    color: #839CA5;
+    text-decoration: none;
+}
+
+.leftSideBar a:hover {
+    color: #F0F0F0;
+    text-decoration: none;
+}
+
+.leftSideBar a:active {
+    color: #839CA5;
+    text-decoration: none;
+}
+
+#listMyApartmentContent {
+    float: left;
+    clear: none;
+    height: 100%;
+    width: 75%;
+    text-align: left;
+    color: #F0F0F0;
+    overflow-y: scroll;
+    padding-left: 3%;
+}
+
+#listMyApartmentContent h2 {
+    font-family: 'Francois One', sans-serif;
+    font-size: 44px;
+    color: #F0F0F0;
+    padding-bottom: 2%;
+}
+
+.listSection {
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom:5%;
+}
+
+.listSection form {
+    padding-bottom: 1%;
+}
+
+.addressInput {
+    width: 50%;
+    margin-bottom: 1%;
+}
+
+.apartmentInput {
+    padding: 8px 20px 8px 20px;
+    border: solid 1px #dcdcdc;
+    font-size: 16px;
+    color:black;
+    width: 50%;
+    margin-bottom: 1%;
+}
+
+#availability {
+    min-height: 112px;
+}
+
+#moveIn, #moveOut {
+    float: left;
+    clear: none;
+    min-width: 300px;
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+    font-style: italic;
+    text-align: left;
+    padding-bottom:5%;
+}
+
+#moveIn input, #moveOut input {
+    background: transparent;
+    border: none;
+}
+
+#map-section {
+    min-height: 30em;
+    background-color: none;
+    /*min-width: 400px;
+   /* width: 100%;
+    height: 100%; */
+}
+
+#contractFile {
+    padding-bottom: 2%;
+}
+
+.contractDoc {
+    width:98%;
+    min-height: 30em;
+    border: 4px solid #F0F0F0;
+    border-radius: 25px;
+}
+
+.dropzone {
+    min-height: 30em;
+}
+
+ul .checkboxGroup  {
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+  list-style: none;
+}
+
+ul .checkboxGroup li input {
+  margin-right: .25em;
+}
+
+ul .checkboxGroup li {
+  border: 1px transparent solid;
+  display:inline-block;
+  width:12em;
+}
+
+ul .checkboxGroup li label {
+  margin-left: ;
+}
+
+ul .checkboxGroup li:hover, ul.checkboxGroup li.focus  {
+  background-color: yellow;
+  border: 1px gray solid;
+  width: 12em;
+}
+
+/* ========================================================================== */
+/* CSS specific for the Apartment Preview Page                                */
+/* ========================================================================== */
+
+#previewPageContainer {
+    height: 100%;
+    width: 100%;
+    margin: auto auto 0 auto;
+    position: fixed;
+}
+
+#previewMyApartmentContent {
+    float: left;
+    clear: none;
+    height: 100%;
+    width: 57%;
+    text-align: left;
+    color: #F0F0F0;
+    overflow-y: scroll;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+#previewMyApartmentContent h2 {
+    font-family: 'Francois One', sans-serif;
+    font-size: 44px;
+    color: #F0F0F0;
+}
+
+.contactInfo {
+    float: left;
+    clear: none;
+    height: 100%;
+    width: 15%;
+    text-align: left;
+    color: #F0F0F0;
+    border-left: 2px solid white;
+    padding-top: 1%;
+    padding-left: 3%;
+}
+
+table {
+    width: 80%;
+}
+
+.contactInfo h2 {
+    font-family: 'Francois One', sans-serif;
+    font-size: 2em;
+    color: #F0F0F0;
+}
+
+.contactInfo h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    color: #F0F0F0;
+}
+
+.contactInfo ul {
+    padding-top:5%;
+}
+
+.contactInfo li {
+    list-style-type: none;
+    line-height: 30px;
+    font-size: 22px;
+    font-family: 'Francois One', sans-serif;
+}
+
+.contactInfo a:link {
+    color: #839CA5;
+    text-decoration: none;
+}
+
+.contactInfo a:visited {
+    color: #839CA5;
+    text-decoration: none;
+}
+
+.contactInfo a:hover {
+    color: #F0F0F0;
+    text-decoration: none;
+}
+
+.contactInfo a:active {
+    color: #839CA5;
+    text-decoration: none;
+}
+
+.contactInfo img {
+    width: 100%;
+    height: auto;
+}
+
+#moveInDetails {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+    font-style: italic;
+    text-align: left;
+    padding-bottom:5%;
+}
+
+#map-section2 {
+    min-height: 25em;
+    background-color: none;
+    margin-bottom: 3%;
+    /*min-width: 400px;
+   /* width: 100%;
+    height: 100%; */
+}
+
+#about img {
+    width: 39em;
+    height: auto;
+}
+
+
+/* ==========================================================================
+   Hide the scrollbar
+   ========================================================================== */
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+-ms-overflow-style: none;
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
